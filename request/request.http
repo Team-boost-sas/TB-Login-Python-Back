@@ -1,4 +1,4 @@
-@hostname = http://localhost:9532
+@hostname = http://localhost:8000
 
 ### health
 GET {{hostname}}/health
