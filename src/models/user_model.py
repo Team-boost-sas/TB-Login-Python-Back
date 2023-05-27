@@ -74,3 +74,6 @@ class user(user_register):
         description="The user's ID.",
         example=123
     )
+
+    class Config:
+        orm_mode = True
