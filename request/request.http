@@ -7,7 +7,4 @@ GET {{hostname}}/health
 ### check User
 GET {{hostname}}/auth/check-user?email=email@email.com
 
-### get redis
-GET {{hostname}}/redis/prueba255231347
-X-Type-Value: object
 
