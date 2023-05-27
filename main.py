@@ -1,14 +1,25 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, status
 from src.routes import auth
 
 app = FastAPI(
-    title="Users API",
+    title="security and authentication",
     description="a REST API using python and mysql",
     version="0.0.1",
+    tags=[
+        "auth"
+    ]
 )
 
-@app.get("/health")
+@app.get(
+        "/health",
+        summary="check status API",
+        response_model=str,
+        status_code=status.HTTP_200_OK,
+        tags=[
+            "API"
+        ]
+        )
 def health():
-    return {"healthy"}
+    return "healthy"
 
 app.include_router(auth.router_auth)

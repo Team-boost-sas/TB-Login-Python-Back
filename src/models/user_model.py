@@ -30,6 +30,12 @@ class user_register(user_login):
         regex = r"^\d{10}$",
         regex_description = "The phone number must be a 10 digit number."
     )
+    secret: Optional[str] = Field(
+        default="",
+        title="Secret",
+        description="The user's secret.",
+        example = "secret"
+    )
     updated_at: Optional[datetime] = Field(
         default_factory = datetime.now,
         title="Updated At",
