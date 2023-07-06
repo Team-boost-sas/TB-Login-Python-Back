@@ -1,4 +1,4 @@
-from config.databases import Base
+from src.config.databases import Base
 from sqlalchemy import Column, Integer, String, Float
 
 
