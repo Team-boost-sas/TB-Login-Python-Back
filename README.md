@@ -36,3 +36,7 @@ $ python src/main.py
 ## Test the endpoints
 
 with the vscode [REST Cliente](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) extension try to send the requests that are in the `./request/request.http` file
+
+
+
+docker compose build --no-cache && docker compose --env-file .env up -d
